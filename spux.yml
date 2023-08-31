@@ -1,10 +1,11 @@
 ---
 space: "leetcode"
-root: "~/dev/personal/leetcode"
+root: "home/sawyer/dev/personal/leetcode"
 windows:
+  - name: "zsh"
+    init: "echo 'Heyy' {enter}"
   - name: "vi"
     init: "{clear} nvim . {enter}"
     cmds:
-      - cmd: "{clear} go run ./two-sum {enter}"
+      - cmd: "{clear} go test ./best-time-to-buy-and-sell-stocks {enter}"
         tgt: "zsh"
-  - name: "zsh"
