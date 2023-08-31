@@ -1,0 +1,10 @@
+---
+space: "leetcode"
+root: "~/dev/personal/leetcode"
+windows:
+  - name: "vi"
+    init: "{clear} nvim . {enter}"
+    cmds:
+      - cmd: "{clear} go run ./two-sum {enter}"
+        tgt: "zsh"
+  - name: "zsh"
