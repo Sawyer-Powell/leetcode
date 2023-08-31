@@ -66,3 +66,39 @@ the first 1.
 
 Well... the solution above resulted in a *Time limit exceeded* warning XD
 
+Let's see if we can do it without using a nested for loop
+
+What we're looking for is the biggest number - smallest number that came
+before it.
+
+What if we have two placeholders?
+1. For smallest number
+2. For biggest number so far?
+
+Hmm.. 
+
+What about sorting the array first and note the original indices?
+
+[7,1,5,3,6,4] -> [1,3,4,5,6,7]
+
+arr =       [1,3,4,5,6,7]
+indices =   [1,3,5,2,4,0]
+
+After its sorted, we have a new problem, find the greatest distance between
+increasing indices.
+
+But, it's a similar pattern, I need to apply a set of different conditions
+on all the members of the array to see which numbers are compatible with
+each other.
+
+### Looked at solution
+
+After looking at solution I was on the right track, to keep a record of the
+minimum value.
+
+That solution works, but my performance is still super crap compared to other
+users. 
+
+Worked on it a little more, one optimization is to wrap the update of the 
+largest difference in an else if statement, since if we're updating the smallest
+element, we definitely don't need to update the difference.
