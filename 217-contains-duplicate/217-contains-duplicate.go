@@ -1,0 +1,5 @@
+package containsduplicate;
+
+func main() {
+}
+

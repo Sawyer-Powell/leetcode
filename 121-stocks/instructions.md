@@ -102,3 +102,5 @@ users.
 Worked on it a little more, one optimization is to wrap the update of the 
 largest difference in an else if statement, since if we're updating the smallest
 element, we definitely don't need to update the difference.
+
+- Key intuitions
